@@ -78,23 +78,24 @@ public class Cuenta {
 
     /**
      * Método para crear un objeto Cuenta pidiendo los datos al usuario
+     *
      * @return Cuenta
      */
 
-     public static Cuenta crearCuenta(){
-         Scanner scanner= new Scanner(System.in);
-         System.out.println("Ingrese el número de la cuenta: ");
-         int numeroCuenta= scanner.nextInt();
-         scanner.nextLine();
-         System.out.println("Ingrese el nombre del titular: ");
-         String titular= scanner.nextLine();
-         System.out.println("Ingrese el saldo Inicial: ");
-         double saldoIncial= scanner.nextDouble();
-         return new Cuenta(numeroCuenta,titular,saldoIncial);
-     }
+    public static Cuenta crearCuenta() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese el número de la cuenta: ");
+        int numeroCuenta = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Ingrese el nombre del titular: ");
+        String titular = scanner.nextLine();
+        System.out.println("Ingrese el saldo Inicial: ");
+        double saldoIncial = scanner.nextDouble();
+        return new Cuenta(numeroCuenta, titular, saldoIncial);
+    }
+
     /**
-     *
-     * @return
+     * @return String
      */
     @Override
     public String toString() {
