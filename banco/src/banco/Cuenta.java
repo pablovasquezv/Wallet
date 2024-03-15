@@ -96,11 +96,28 @@ public class Cuenta {
 
     /**
      * Método para depositar en la cuenta
+     *
+     * @param monto
      */
     public void depositar(double monto) {
         saldo += monto;//Asignar al saldo el monto
         System.out.println("Se a depositado " + monto + " de dinero en la cuenta.");
         System.out.println("El saldo actual es: " + saldo);
+    }
+
+    /**
+     * Método para retirar de la cuenta
+     *
+     * @param monto
+     */
+    public void retirar(double monto) {
+        if (monto <= saldo) {
+            saldo -= monto;
+            System.out.println("Se han retirado " + monto + " unidades monetarias de la cuenta.");
+            System.out.println("El saldo actual es: " + saldo);
+        } else {
+            System.out.println("Fondos insuficientes para realizar el retiro.");
+        }
     }
 
     /**
