@@ -15,7 +15,7 @@ public class Cuenta {
     private Double saldo;
 
     /**
-     *
+     * Constructor sin parámetros
      */
     public Cuenta() {
 
