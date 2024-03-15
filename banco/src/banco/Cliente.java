@@ -24,4 +24,52 @@ public class Cliente {
         this.nombre = nombre;
         this.cuenta = cuenta;
     }
+
+    /**
+     *
+     * @return ID
+     */
+    public Integer getID() {
+        return ID;
+    }
+
+    /**
+     *
+     * @param ID
+     */
+    public void setID(Integer ID) {
+        this.ID = ID;
+    }
+
+    /**
+     *
+     * @return nombre
+     */
+    public String getNombre() {
+        return nombre;
+    }
+
+    /**
+     *
+     * @param nombre
+     */
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    /**
+     *
+     * @return cuenta
+     */
+    public Cuenta getCuenta() {
+        return cuenta;
+    }
+
+    /**
+     *
+     * @param cuenta
+     */
+    public void setCuenta(Cuenta cuenta) {
+        this.cuenta = cuenta;
+    }
 }
