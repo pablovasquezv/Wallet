@@ -73,4 +73,17 @@ public class Cuenta {
         System.out.println("Titular: " + titular);
         System.out.println("Saldo: " + saldo);
     }
+
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Cuenta{" +
+                "numero_cuenta=" + numero_cuenta +
+                ", titular='" + titular + '\'' +
+                ", saldo=" + saldo +
+                '}';
+    }
 }
