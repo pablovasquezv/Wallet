@@ -4,6 +4,8 @@ package banco;
  * @author Pablo
  */
 
+import java.util.Scanner;
+
 /**
  * Clase: Cuenta
  */
@@ -74,6 +76,22 @@ public class Cuenta {
         System.out.println("Saldo: " + saldo);
     }
 
+    /**
+     *
+     * @return Cuenta
+     */
+     // Método para crear una cuenta
+     public static Cuenta crearCuenta(){
+         Scanner scanner= new Scanner(System.in);
+         System.out.println("Ingrese el número de la cuenta: ");
+         int numeroCuenta= scanner.nextInt();
+         scanner.nextLine();
+         System.out.println("Ingrese el nombre del titular: ");
+         String titular= scanner.nextLine();
+         System.out.println("Ingrese el saldo Inicial: ");
+         double saldoIncial= scanner.nextDouble();
+         return new Cuenta(numeroCuenta,titular,saldoIncial);
+     }
     /**
      *
      * @return
