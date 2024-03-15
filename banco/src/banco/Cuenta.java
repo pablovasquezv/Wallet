@@ -3,10 +3,14 @@ package banco;
 /**
  * @author Pablo
  */
+
+/**
+ * Clase: Cuenta
+ */
 public class Cuenta {
-    Integer numero_cuenta;
-    String titular;
-    Double saldo;
+    private   Integer numero_cuenta;
+    private String titular;
+    private Double saldo;
 
     /**
      * @param numero_cuenta
