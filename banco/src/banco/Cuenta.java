@@ -95,6 +95,15 @@ public class Cuenta {
     }
 
     /**
+     * Método para depositar en la cuenta
+     */
+    public void depositar(double monto) {
+        saldo += monto;//Asignar al saldo el monto
+        System.out.println("Se a depositado " + monto + " de dinero en la cuenta.");
+        System.out.println("El saldo actual es: " + saldo);
+    }
+
+    /**
      * @return String
      */
     @Override
