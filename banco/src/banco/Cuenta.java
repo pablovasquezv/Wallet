@@ -77,10 +77,10 @@ public class Cuenta {
     }
 
     /**
-     *
+     * Método para crear un objeto Cuenta pidiendo los datos al usuario
      * @return Cuenta
      */
-     // Método para crear una cuenta
+
      public static Cuenta crearCuenta(){
          Scanner scanner= new Scanner(System.in);
          System.out.println("Ingrese el número de la cuenta: ");
