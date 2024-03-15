@@ -15,6 +15,13 @@ public class Cuenta {
     private Double saldo;
 
     /**
+     *
+     */
+    public Cuenta() {
+
+    }
+
+    /**
      * @param numero_cuenta
      * @param titular
      * @param saldo
