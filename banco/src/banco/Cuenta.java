@@ -103,7 +103,7 @@ public class Cuenta {
             System.out.println("Ingrese el saldo Inicial: ");
             try {
                 saldoIncial = scanner.nextDouble();
-                saldoValido=true;
+                saldoValido = true;
             } catch (InputMismatchException e) {
                 System.out.println("Ingrese el un valor númerico para el saldo!");
                 scanner.nextLine();
