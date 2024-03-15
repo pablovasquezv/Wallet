@@ -111,13 +111,14 @@ public class Cuenta {
      * @param monto
      */
     public void retirar(double monto) {
-        if (monto <= saldo) {
-            saldo -= monto;
-            System.out.println("Se han retirado " + monto + " unidades monetarias de la cuenta.");
-            System.out.println("El saldo actual es: " + saldo);
-        } else {
-            System.out.println("Fondos insuficientes para realizar el retiro.");
-        }
+        /**
+         * En este operador ternario, la condición verifica si el monto es menor o igual al saldo. Si es verdadero,
+         * resta el monto del saldo y muestra un mensaje con el monto retirado y el saldo actual. Si es falso,
+         * muestra un mensaje de fondos insuficientes para realizar el retiro.
+         */
+        saldo = (monto <= saldo) ? (saldo - monto) : saldo;
+        System.out.println((monto <= saldo) ? "Se han retirado " + monto + " de dinero en la cuenta.\n " +
+                "El saldo actual es: " + saldo : "No tiene saldo suficiente para realizar un retiro!");
     }
 
     /**
