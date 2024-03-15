@@ -5,7 +5,6 @@
 package banco;
 
 /**
- *
  * @author Pablo
  */
 public class Banco {
@@ -33,7 +32,11 @@ public class Banco {
         cliente.consultarDatos();
         cliente.depositar(1000.2);
         cliente.retirar(10400.2);
-
+        // Mostrar los valores de los atributos por pantalla
+        Cuenta billetera1 = Cuenta.crearCuenta();
+        billetera1.depositar(1000.2);
+        billetera1.retirar(98.2);
+        billetera1.mostrarInformación();
     }
-    
+
 }
