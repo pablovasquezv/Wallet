@@ -15,6 +15,7 @@ public class Banco {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Cuenta billetera1= new Cuenta(12323,"pablo",2343.2);
     }
     
 }
