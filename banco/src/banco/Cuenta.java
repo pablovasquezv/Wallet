@@ -4,6 +4,7 @@ package banco;
  * @author Pablo
  */
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -96,8 +97,18 @@ public class Cuenta {
         scanner.nextLine();
         System.out.println("Ingrese el nombre del titular: ");
         String titular = scanner.nextLine();
-        System.out.println("Ingrese el saldo Inicial: ");
-        double saldoIncial = scanner.nextDouble();
+        double saldoIncial = 0;
+        boolean saldoValido = false;
+        while (!saldoValido) {
+            System.out.println("Ingrese el saldo Inicial: ");
+            try {
+                saldoIncial = scanner.nextDouble();
+                saldoValido=true;
+            } catch (InputMismatchException e) {
+                System.out.println("Ingrese el un valor númerico para el saldo!");
+                scanner.nextLine();
+            }
+        }
         return new Cuenta(numeroCuenta, titular, saldoIncial);
     }
 
