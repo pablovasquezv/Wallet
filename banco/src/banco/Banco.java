@@ -14,7 +14,11 @@ public class Banco {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Instanciar una cuenta
+        Cuenta billetera1= new Cuenta(12323,"pablo",2343.2);
+
+        // Mostrar los valores de los atributos por pantalla
+        billetera1.mostrarInformación();
     }
     
 }
