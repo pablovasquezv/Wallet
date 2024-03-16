@@ -11,9 +11,9 @@ import java.util.Scanner;
  * Clase: Cuenta
  */
 public class Cuenta {
-    private Integer numero_cuenta;
-    private String titular;
-    private Double saldo;
+    protected Integer numero_cuenta;
+    protected String titular;
+    protected Double saldo;
 
     /**
      * Constructor sin parámetros
