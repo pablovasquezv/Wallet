@@ -7,6 +7,6 @@ package banco;
 /**
  * subClase: CuentaCorriente
  */
-public class CuentaCorriente {
+public class CuentaCorriente extends Cuenta {
 
 }
