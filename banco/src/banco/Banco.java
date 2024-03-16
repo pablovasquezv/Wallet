@@ -28,6 +28,8 @@ public class Banco {
         // Instanciar una cuenta
         //Cuenta billetera1= new Cuenta(12323,"pablo",2343.2);
         // Mostrar los valores de los atributos por pantalla
+
+
         Cliente cliente = Cliente.crearCliente();
         cliente.consultarDatos();
         cliente.depositar(1000.2);
@@ -37,6 +39,10 @@ public class Banco {
         billetera1.depositar(1000.2);
         billetera1.retirar(98.2);
         billetera1.mostrarInformación();
+        //falta
+        CuentaCorriente cuentaCorriente = new CuentaCorriente(12323,"pablo",2343.2);
+        System.out.println("Datos \n"+cuentaCorriente.toString());
+        ;
     }
 
 }
