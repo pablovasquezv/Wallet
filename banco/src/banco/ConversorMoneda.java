@@ -9,6 +9,39 @@ package banco;
  */
 public class ConversorMoneda {
     /**
+     * Métodos para convertir montos de Pesos A Dolares
+     * @param monto
+     * @return montoConvertido
+     */
+    public double convertirPesosADolares(double monto) {
+        // Lógica para convertir de pesos chilenos a dólares
+        double montoConvertido = monto / 755.50; // Tasa de cambio de pesos chilenos a dólares
+        return montoConvertido;
+    }
+    /**
+     * Métodos para convertir montos de Pesos A Yenes.
+     *
+     * @param monto
+     * @return montoConvertido
+     */
+    public double convertirPesosAYenes(double monto) {
+        // Lógica para convertir de pesos chilenos a yenes
+        double montoConvertido = monto / 6.92; // Tasa de cambio de pesos chilenos a yenes
+        return montoConvertido;
+    }
+    /**
+     * Métodos para convertir montos de Pesos A LibrasEsterlinas.
+     *
+     * @param monto
+     * @return montoConvertido
+     */
+    public double convertirPesosALibrasEsterlinas(double monto) {
+        // Lógica para convertir de pesos chilenos a libras esterlinas
+        double montoConvertido = monto / 898.67; // Tasa de cambio de pesos chilenos a libras esterlinas
+        return montoConvertido;
+    }
+
+    /**
      * Métodos para convertir montos de dólares a yenes.
      *
      * @param monto
