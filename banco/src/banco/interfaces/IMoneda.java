@@ -11,5 +11,5 @@ public interface IMoneda {
     //Atributos
     String getSimbolo();
     double  getFactorConversion();
-    void convertirMoneda(IMoneda moneda,double monto);
+    void convertirMoneda(IMoneda otraMoneda,double monto);
 }
