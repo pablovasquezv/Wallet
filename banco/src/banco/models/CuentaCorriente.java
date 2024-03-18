@@ -1,8 +1,10 @@
-package banco;
+package banco.models;
 
 /**
  * @author Pablo
  */
+
+import banco.models.Cuenta;
 
 /**
  * subClase: CuentaCorriente

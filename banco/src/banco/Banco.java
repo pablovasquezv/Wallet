@@ -4,6 +4,10 @@
  */
 package banco;
 
+import banco.models.Billetera;
+import banco.models.Moneda;
+import banco.models.TarjetaDeCredito;
+
 /**
  * @author Pablo
  */

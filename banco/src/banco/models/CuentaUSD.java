@@ -1,14 +1,17 @@
-package banco;
+package banco.models;
+
 /**
  * @author Pablo
  */
 
+import banco.models.Cuenta;
+
 /**
  * Clase: CuentaUSD
  */
-public class CuentaPesoCL extends Cuenta {
-
+public class CuentaUSD extends Cuenta {
     /**
+     *
      * @param monto
      */
     @Override
@@ -20,6 +23,7 @@ public class CuentaPesoCL extends Cuenta {
     }
 
     /**
+     *
      * @param monto
      */
     @Override

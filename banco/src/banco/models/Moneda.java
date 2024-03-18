@@ -1,13 +1,15 @@
-package banco;
+package banco.models;
 
 /**
  * @author Pablo
  */
 
+import banco.models.FormaDePago;
+
 /**
- * Clase: TarjetaDeCredito
+ * Clase: Moneda
  */
-public class TarjetaDeCredito extends FormaDePago{
+public class Moneda extends FormaDePago {
     /**
      *
      */
