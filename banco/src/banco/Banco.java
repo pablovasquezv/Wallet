@@ -40,7 +40,7 @@ public class Banco {
         billetera1.retirar(98.2);
         billetera1.mostrarInformación();
         //falta
-        CuentaCorriente cuentaCorriente = new CuentaCorriente(12323,"pablo",2343.2);
+        CuentaCorriente cuentaCorriente = new CuentaCorriente(12323,"Juan",2343.2);
         System.out.println("Datos \n"+cuentaCorriente.toString());
         ;
     }
