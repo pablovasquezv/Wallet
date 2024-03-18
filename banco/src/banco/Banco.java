@@ -24,7 +24,7 @@ public class Banco {
          * crearCliente debe ser estático, obtienes un objeto con los datos correctamente porque estás llamando al
          * método directamente en la clase Cliente, lo que significa que el método está asociado con la clase en sí y no
          * con una instancia específica.
-         */
+
         // Instanciar una cuenta
         //Cuenta billetera1= new Cuenta(12323,"pablo",2343.2);
         // Mostrar los valores de los atributos por pantalla
@@ -42,7 +42,15 @@ public class Banco {
         //falta
         CuentaCorriente cuentaCorriente = new CuentaCorriente(12323,"Juan",2343.2);
         System.out.println("Datos \n"+cuentaCorriente.toString());
-        ;
+         */
+        CuentaPesoCL cuentaPesoCL= new CuentaPesoCL();
+        cuentaPesoCL.depositar(1000.2);
+        cuentaPesoCL.retirar(300.2);
+
+        CuentaUSD cuentaUSD= new CuentaUSD();
+        cuentaUSD.depositar(1000.2);
+        cuentaUSD.retirar(323.3);
+
     }
 
 }
