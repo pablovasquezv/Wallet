@@ -8,9 +8,20 @@ package banco;
  * Clase: Billetera
  */
 public class Billetera {
-    FormaDePago metodoPago;
+   private FormaDePago metodoPago;
 
-    metodoPago = new TarjetaDeCredito();
-    metodoPago = new Moneda();
+    /**
+     *
+     * @param metodoPago
+     */
+    public void setMetodoPago(FormaDePago metodoPago) {
+        this.metodoPago = metodoPago;
+    }
 
+    /**
+     *
+     */
+    public void realizarPago() {
+        metodoPago.realizarPago();
+    }
 }

@@ -42,7 +42,7 @@ public class Banco {
         //falta
         CuentaCorriente cuentaCorriente = new CuentaCorriente(12323,"Juan",2343.2);
         System.out.println("Datos \n"+cuentaCorriente.toString());
-         */
+
         CuentaPesoCL cuentaPesoCL= new CuentaPesoCL();
         cuentaPesoCL.depositar(1000.2);
         cuentaPesoCL.retirar(300.2);
@@ -50,6 +50,15 @@ public class Banco {
         CuentaUSD cuentaUSD= new CuentaUSD();
         cuentaUSD.depositar(1000.2);
         cuentaUSD.retirar(323.3);
+         */
+        Billetera billetera = new Billetera();
+
+        // Asignar el método de pago según se necesite
+        billetera.setMetodoPago(new TarjetaDeCredito());
+        billetera.realizarPago();
+
+        billetera.setMetodoPago(new Moneda());
+        billetera.realizarPago();
 
     }
 
