@@ -1,21 +1,25 @@
 package banco;
+/**
+ * @author Pablo
+ */
 
+/**
+ * Clase: CuentaUSD
+ */
 public class CuentaPesoCL extends Cuenta {
 
     /**
-     *
      * @param monto
      */
     @Override
     public void depositar(double monto) {
-        saldo=0.0;
+        saldo = 0.0;
         saldo += monto;//Asignar al saldo el monto
         System.out.println("Se a depositado " + monto + " de dinero en la cuenta.");
         System.out.println("El saldo actual es: " + saldo);
     }
 
     /**
-     *
      * @param monto
      */
     @Override
