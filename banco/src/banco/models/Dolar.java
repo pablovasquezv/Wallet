@@ -1,10 +1,11 @@
 package banco.models;
+//Importaciones
+
+import banco.interfaces.IMoneda;
 
 /**
  * @author Pablo
  */
-
-import banco.interfaces.IMoneda;
 
 /**
  * Clase: Dolar
