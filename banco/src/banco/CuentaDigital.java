@@ -9,4 +9,8 @@ package banco;
  */
 public abstract class CuentaDigital {
 
+    /**
+     *
+     */
+    public abstract void verificarFondos();
 }
