@@ -4,8 +4,6 @@ package banco.interfaces;
  * @author Pablo
  */
 
-import banco.models.Moneda;
-
 /**
  * Interface: IMoneda
  */
