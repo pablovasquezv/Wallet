@@ -7,6 +7,7 @@ package banco;
  * Clase: CuentaUSD
  */
 public class CuentaPesoCL extends Cuenta {
+    public static ConversorMoneda conversorMoneda = new ConversorMoneda();
 
     /**
      * @param monto
